@@ -4,7 +4,7 @@ Have the function PrimeTime(num) take the num parameter being passed and return 
 
 function PrimeTime(num) { 
 
-  for(var i = 2; i < num; i++) {
+  for(var i = 2; i < Math.floor(Math.sqrt(num)); i++) {
     if ((num % i) == 0) {
       return false;
     }
